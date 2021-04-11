@@ -8,7 +8,6 @@
 		<meta name="keywords" content="image grid, css grid, animation, parallax, layout, template" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
 		<style>
@@ -163,10 +162,10 @@
 
 			.menu {
 				position: fixed;
-				top: 9.6875rem;
+				top: 0;
 				left: 0;
 				width: 100%;
-				height: calc(100% - 9.6875rem);
+				height: 100%;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -204,12 +203,12 @@
 				font-family: "Roboto", sans-serif;
 				text-transform: lowercase;
 				font-weight: 900;
-				-webkit-text-stroke: 2px #fff;
+				-webkit-text-stroke: 1px #fff;
 				text-stroke: 2px #fff;
 				-webkit-text-fill-color: transparent;
 				text-fill-color: transparent;
 				color: transparent;
-				font-size: 2rem;
+				font-size: 3rem;
 				padding: 0 1rem;
 				padding-bottom: 0.5rem;
 				cursor: pointer;
@@ -245,8 +244,9 @@
 				grid-template-columns: 100%;
 				grid-template-rows: 1.75rem calc(100% - 1.75rem);
 				position: relative;
-				padding: 12rem 5vw 2rem;
+				padding: 3rem 3rem ;
 				pointer-events: none;
+				grid-gap: 2rem;
 			}
 
 			.gridback {
@@ -255,7 +255,7 @@
 				justify-self: center;
 				background: none;
 				border: 0;
-				margin: 0;
+				margin: 1rem;
 				padding: 0;
 				color: #fff;
 				opacity: 0;
@@ -490,7 +490,7 @@
 			</symbol>
 		</svg>
 		<main>
-			<nav class="menu">
+			<div class="menu">
 				<div class="menu__item">
 					<span class="menu__item-number">01</span>
 					<span class="menu__item-textwrap"><span class="menu__item-text">people</span></span>
@@ -508,7 +508,7 @@
 				</div>
 				
 				
-			</nav>
+			</div>
 			<div class="page page--preview">
 				<div class="gridwrap">
 					<div class="grid grid--layout-1">
