@@ -244,7 +244,7 @@
 				grid-template-columns: 100%;
 				grid-template-rows: 1.75rem calc(100% - 1.75rem);
 				position: relative;
-				padding: 3rem 3rem ;
+				padding: 0.2rem 3rem ;
 				pointer-events: none;
 				grid-gap: 2rem;
 			}
@@ -395,6 +395,49 @@
 				height: 100vh;
 			}
 
+			.main_header {
+				width: 100%;
+				height: 6.25rem;
+			}
+
+			.header_wrapper {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				-webkit-box-pack: justify;
+				justify-content: space-between;
+				-webkit-box-align: center;
+				align-items: center;
+				max-width: 62.5rem;
+				margin: 0px auto;
+				padding: 0px 2.5rem;
+				box-sizing: border-box;
+			}
+
+			.nav_link {
+				display: inline-block;
+				text-decoration: none;
+				text-decoration-skip-ink: auto;
+				cursor: pointer;
+				box-sizing: border-box;
+			}
+
+			.nav_logo {
+				position: relative;
+				z-index: 13;
+				font-size: 2rem;
+				font-weight: 900;
+				color: rgb(250, 250, 250);
+				filter: none !important;
+				pointer-events: auto !important;
+				user-select: auto !important;
+				box-sizing: border-box;
+				display: block;
+				font-family: Roboto, Arial, sans-serif;
+    			line-height: 1.5rem;
+				tab-size: 4;
+			}
+
 			@media screen and (min-width: 53em) {
 				.content {
 					position: relative;
@@ -509,6 +552,15 @@
 				
 				
 			</div>
+			<header class="main_header">
+				<div class="header_wrapper">
+					<a class="nav_link" href="/" aria-current="page" aria-label="home">
+						<div class="nav_logo">
+							tjoab.
+						</div>
+					</a>
+				</div>
+			</header>
 			<div class="page page--preview">
 				<div class="gridwrap">
 					<div class="grid grid--layout-1">
