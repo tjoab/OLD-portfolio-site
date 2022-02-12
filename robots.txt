@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://tjoab.github.io/sitemap.xml
+Host: https://tjoab.github.io
